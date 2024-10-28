@@ -64,25 +64,7 @@ nav {
     font-size: 20px;
 }
 
-nav::after {
-    content: "";
-    position: absolute;
-    bottom: -5px; /* Move it below the container */
-    left: 0;
-    width: 114%; /* Extend beyond container width */
-    height: 0.5px; /* Border thickness */
-    background-color: rgb(136, 133, 133);
-}
 
-nav::before {
-    content: "";
-    position: absolute;
-    bottom: -5px; /* Move it below the container */
-    right: 0;
-    width: 114%; /* Extend beyond container width */
-    height: 0.5px; /* Border thickness */
-    background-color: rgb(136, 133, 133); /* Border color */
-}
 
 nav ul {
     list-style: none;
@@ -280,6 +262,6 @@ footer div ul li:last-child img:hover {
 /* UTILITY CLASS
  */
 .container {
-    max-width: 1500px;
+    max-width: 1170px;
     margin-inline: auto;
 }

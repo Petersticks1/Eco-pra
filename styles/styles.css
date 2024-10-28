@@ -54,6 +54,130 @@ main {
     text-align: justify;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Move it below the container */
+    left: 0;
+    width: 114%; /* Extend beyond container width */
+    height: 0.5px; /* Border thickness */
+    background-color: rgb(136, 133, 133);
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Move it below the container */
+    right: 0;
+    width: 114%; /* Extend beyond container width */
+    height: 0.5px; /* Border thickness */
+    background-color: rgb(136, 133, 133); /* Border color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-left: 7rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    text-decoration-line: underline;
+}
+
+nav input[type="search"] {
+    background-color: transparent;
+    color: var(--black-text-clr);
+    width: 100%;
+    border-style: none;
+    font-size: 18px;
+    flex-grow: 1;
+    outline-style: none;
+}
+
+nav .top-search {
+    padding: 14px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+nav .top-search i {
+    font-size: 24px;
+}
+
+nav div {
+    display: flex;
+}
+
+nav .heart-cart {
+    display: flex;
+    gap: 1rem;
+    font-size: 32px;
+    align-items: center;
+}
+
+nav .heart-cart a {
+    color: black;
+}
+
+
+
+section {
+    width: 250px;
+    padding: auto;
+    margin-top: 3rem;
+    display: flex;
+}
+
+/* Styling for the top category list */
+.topCategory ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topCategory li {
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--black-text-clr);
+    position: relative;
+  
+}
+
+/* Arrow icon styling */
+.topCategory li i {
+    position: absolute;
+    right:1px;
+    
+    
+}
+
+/* Specific styling for categories with arrows */
+.topCategory li i.bx-chevron-right {
+    display: inline-block;
+}
+
 /* FOOTER */
 
 footer {

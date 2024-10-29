@@ -4,7 +4,7 @@
   --white-text-clr: hsl(0, 0%, 100%);
 }
 
-.signup-con {
+.signin-con {
   margin-top: 50px;
   margin-bottom: 100px;
   display: flex;
@@ -46,7 +46,7 @@ p {
   margin-top: 20px;
 }
 
-.signup-frame {
+.signin-frame {
   margin-bottom: 20px;
   width: Hug (339px) px;
   height: Hug (78px) px;
@@ -65,42 +65,41 @@ input {
 }
 
 button {
-  width: 100%;
-  padding: 20px;
+  width: 40%;
+  padding: 15px;
   background-color: rgb(216, 67, 67);
   color: rgb(19, 18, 18);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 15px 0;
   justify-content: center;
   display: flex; /* Align items inside the button */
   align-items: center; /* Center items vertically */
-}
-
-button.google {
-  justify-content: center;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  padding: 15px;
-  background-color: #ffffff;
 }
 
 button:hover {
   opacity: 0.9;
 }
 
-.google-logo {
-  width: 20px; /* Adjust logo size */
-  height: 20px;
-  margin-right: 8px; /* Space between logo and text */
+.login-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
 }
 
-a {
-  color: #333; /* Change link color to dark gray or any color of your choice */
-  text-decoration: underline; /* Make the link underlined */
+button {
+  margin-right: 10px; /* Space between button and text */
 }
 
-a:hover {
-  text-decoration: none; /* Remove underline on hover */
+.forgot-password {
+  margin-left: 40px;
+  font-size: 0.8em; /* Keep the font size smaller */
+  color: rgb(216, 67, 67); /* Set the text color to pink */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.forgot-password:hover {
+  text-decoration: none; /* Add underline on hover */
+  color: darkmagenta; /* Change color on hover (optional) */
 }

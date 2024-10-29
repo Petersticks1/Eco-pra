@@ -1,0 +1,45 @@
+:root {
+  /*     b-g
+   */
+  --bg-primary: hsla(0, 0%, 100%, 1);
+  --bg-secondary: hsla(0, 0%, 96%, 1);
+  --accent-clr: hsla(0, 68%, 56%, 1);
+
+  /*   text
+   */
+
+  --text-clr: hsla(0, 0%, 0%, 1);
+  --text-neutral: hsla(0, 0%, 98%, 1);
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #888;
+}
+
+.breadcrumb li {
+  margin-right: 8px;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumb li::after {
+  content: " / ";
+  margin-left: 8px;
+  color: #888;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb li:last-child a {
+  color: #888;
+  pointer-events: none;
+}

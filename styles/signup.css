@@ -1,0 +1,95 @@
+:root {
+  --background-clr: hsl(0, 0%, 0%);
+  --black-text-clr: hsl(0, 0%, 0%);
+  --white-text-clr: hsl(0, 0%, 100%);
+}
+
+.signup-con {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-image {
+  margin-right: 30px;
+  padding-left: 0px;
+  width: 805px;
+  height: 781px;
+  left: 0px;
+  top: 200px;
+  background: #cbe4e8;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.right-frame {
+  margin-top: 100px;
+  background: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center; /* Center text in the container */
+}
+
+h2 {
+  margin-bottom: -10px;
+}
+
+.signup-frame {
+  margin-bottom: 20px;
+  width: Hug (339px) px;
+  height: Hug (78px) px;
+  gap: 0px;
+  opacity: 0px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(216, 67, 67);
+  color: rgb(19, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  justify-content: center;
+  display: flex; /* Align items inside the button */
+  align-items: center; /* Center items vertically */
+}
+
+button.google {
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.google-logo {
+  width: 20px; /* Adjust logo size */
+  height: 20px;
+  margin-right: 8px; /* Space between logo and text */
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #333; /* Change link color to dark gray or any color of your choice */
+  text-decoration: underline; /* Make the link underlined */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}

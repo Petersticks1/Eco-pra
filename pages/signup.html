@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/signup.css">
+    <link rel="stylesheet" href="/styles/signup.css" />
     <title>Sign-up</title>
   </head>
   <body>
@@ -55,11 +55,45 @@
         <a href="#"> <i class="bx bx-cart-alt"></i></a>
       </div>
     </nav>
-    <hr>
+    <hr />
 
     <main class="container">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores magni delectus expedita numquam porro doloremque sapiente architecto laborum possimus voluptates explicabo nam fugiat, tempore distinctio at consequuntur illum omnis natus.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad possimus nisi similique rerum repudiandae pariatur accusamus eius vitae soluta inventore labore, culpa dolores fugiat facere asperiores dignissimos temporibus sint.
+      <div class="signup-con">
+        <div class="side-image">
+          <img src="/images/Side Image.svg" alt="" />
+        </div>
+        <div class="right-frame">
+            <div class="signup-frame">
+          <h2>Create an account</h2>
+          <p>Enter your details below</p>
+        </div>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Create Account</button>
+          </form>
+          <button class="google" type="button">
+            <img src="/images/Icon-Google.svg" alt="Google Logo" class="google-logo" />
+            Sign Up with Google
+          </button>
+          <p>
+            Already have an account?
+            <a href="login.html" class="login-link">Log in</a>
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>

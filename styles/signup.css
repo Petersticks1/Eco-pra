@@ -30,7 +30,7 @@
   text-align: center; /* Center text in the container */
 }
 
-h2 {
+.signup-frame h2 {
   text-align: left;
   font-family: Inter;
   font-size: 30px;
@@ -38,7 +38,7 @@ h2 {
   margin-bottom: -10px;
 }
 
-p {
+.signup-frame p {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -53,7 +53,8 @@ p {
   gap: 0px;
   opacity: 0px;
 }
-input {
+
+.right-frame input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -64,7 +65,7 @@ input {
   outline: none;
 }
 
-button {
+.right-frame button {
   width: 100%;
   padding: 20px;
   background-color: rgb(216, 67, 67);
@@ -78,7 +79,7 @@ button {
   align-items: center; /* Center items vertically */
 }
 
-button.google {
+.right-frame button.google {
   justify-content: center;
   border: 1px solid #ccc;
   border-radius: 1px;
@@ -86,21 +87,21 @@ button.google {
   background-color: #ffffff;
 }
 
-button:hover {
+.right-frame button:hover {
   opacity: 0.9;
 }
 
-.google-logo {
+.right-frame .google-logo {
   width: 20px; /* Adjust logo size */
   height: 20px;
   margin-right: 8px; /* Space between logo and text */
 }
 
-a {
+.right-frame a {
   color: #333; /* Change link color to dark gray or any color of your choice */
   text-decoration: underline; /* Make the link underlined */
 }
 
-a:hover {
+.right-frame a:hover {
   text-decoration: none; /* Remove underline on hover */
 }

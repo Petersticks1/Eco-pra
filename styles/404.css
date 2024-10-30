@@ -1,0 +1,110 @@
+.roadmap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: Hug (134px) px;
+  height: Hug (21px) px;
+  top: 222px;
+  left: 135px;
+  gap: 1px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  margin: 70px; /* Add some margin if needed */
+}
+
+.frame-link {
+  padding-right: 20px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: -70px;
+}
+
+.frame-link2 {
+  color: #000000;
+  text-decoration: none;
+}
+
+.roadmap p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  width: 40px;
+  height: 21px;
+  gap: 2px;
+  opacity: 0px;
+  margin-left: -70px; /* Remove default margin */
+  margin-right: 10px; /* Space between Home and /404 Error */
+}
+
+.road-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: Hug (829px) px;
+  height: Hug (179px) px;
+  top: 383px;
+  left: 306px;
+  gap: 20px;
+  opacity: 0px;
+}
+.roadframe-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 78px;
+  gap: 10px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.road-frame h1 {
+  text-align: left;
+  letter-spacing: 0.03em;
+  line-height: 115px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  margin: 0;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.road-frame p {
+  width: 425px;
+  height: 24px;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 24px;
+}
+
+.roadframe-button a {
+  margin: 30px;
+  font-size: 20px;
+  width: Hug (254px) px;
+  height: Hug (56px) px;
+  top: 642px;
+  left: 572px;
+  padding: 16px 48px 16px 48px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #db4444;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #db4444;
+}

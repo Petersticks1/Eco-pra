@@ -30,7 +30,7 @@
   text-align: center; /* Center text in the container */
 }
 
-h2 {
+.signin-frame h2 {
   text-align: left;
   font-family: Inter;
   font-size: 30px;
@@ -38,7 +38,7 @@ h2 {
   margin-bottom: -10px;
 }
 
-p {
+.signin-frame p {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -53,7 +53,7 @@ p {
   gap: 0px;
   opacity: 0px;
 }
-input {
+.right-frame input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -64,7 +64,7 @@ input {
   outline: none;
 }
 
-button {
+.login-container button {
   width: 40%;
   padding: 15px;
   background-color: rgb(216, 67, 67);
@@ -78,7 +78,7 @@ button {
   align-items: center; /* Center items vertically */
 }
 
-button:hover {
+.login-container button:hover {
   opacity: 0.9;
 }
 
@@ -87,7 +87,7 @@ button:hover {
   align-items: center; /* Center items vertically */
 }
 
-button {
+.login-container button {
   margin-right: 10px; /* Space between button and text */
 }
 

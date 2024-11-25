@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/wishlist.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
     <title>Cart</title>
   </head>
   <body>
@@ -58,9 +58,6 @@
     <hr />
 
     <main class="container">
-        <a href="/pages/checkout.html">account</a>
-
-      Cart
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb" id="breadcrumb">
           <li>
@@ -69,6 +66,58 @@
           <li><a href="#">Cart</a></li>
         </ol>
       </nav>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="/images/g27cq4-500x500 1.svg" alt="" /></td>
+            <td>$650</td>
+            <td>count</td>
+            <td>$650</td>
+          </tr>
+          <tr>
+            <td><img src="/images/g92-2-500x500 1.svg" alt="" /></td>
+            <td>$650</td>
+            <td>count</td>
+            <td>$650</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="cart-buttons">
+        <button class="netral-btn" type="button">Return To Shop</button>
+        <button class="netral-btn" type="button">Update Cart</button>
+      </div>
+
+      <div class="cart-bottom">
+        <form id="coupon-form" action="/apply-coupon" method="POST">
+            <input
+              type="text"
+              id="coupon"
+              name="coupon"
+              placeholder="Coupon Code"
+          />
+          <button type="submit">Apply Coupon</button>
+        </form>
+
+        <div class="cart-total">
+          <h2>Cart Total</h2>
+          <p>Subtotal: <span id="subtotal">$1750</span></p>
+          <hr />
+
+          <p>Shipping: <span id="shipping">Free</span></p>
+          <hr />
+          <p>Total: <span id="total">$1750</span></p>
+          <button class="checkout-btn" type="submit">Proceed To Checkout</button>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -144,6 +193,5 @@
       </div>
     </footer>
     <script src="/scripts.js/cart.js"></script>
-
   </body>
 </html>

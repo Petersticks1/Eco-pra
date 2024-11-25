@@ -12,6 +12,32 @@
   --text-neutral: hsla(0, 0%, 98%, 1);
 }
 
+/* RESET
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* BODY
+ */
+
+
+ .account-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+ }
+ .account-top span {
+  color: var(--accent-clr);
+ }
+
 .breadcrumb {
   list-style: none;
   display: flex;
@@ -42,4 +68,119 @@
 .breadcrumb li:last-child a {
   color: #888;
   pointer-events: none;
+}
+
+/* account container */
+
+.account-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 3rem;
+}
+
+.account-menu {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-clr);
+}
+
+.account-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.link-header span {
+  padding-block: 10px;
+}
+
+.link {
+  cursor: pointer;
+  text-wrap: nowrap;
+  opacity: 50%;
+  padding-block: 4px;
+}
+.link:hover {
+  color: var(--accent-clr);
+  opacity: 1;
+}
+
+/* account-form-inputs
+ */
+
+.account-form-inputs {
+  max-width: 870px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-clr);
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  padding-inline: 3rem;
+}
+
+fieldset {
+  border: none;
+}
+.fieldset-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+}
+.fieldset-one legend {
+  color: var(--accent-clr);
+  font-size: 20px;
+  line-height: 28px;
+}
+.fieldset-one input {
+  margin-top: 10px;
+}
+legend {
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+input[type="text"],
+form input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  display: block;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 16px 48px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.cancel-button {
+  color: var(--text-clr);
+  border: none;
+  background: transparent;
+}
+.save-button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
 }

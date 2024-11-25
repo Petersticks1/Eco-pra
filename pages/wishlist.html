@@ -11,8 +11,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/wishlist.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Wishlist</title>
   </head>
   <body>
@@ -58,15 +58,31 @@
     <hr />
 
     <main class="container">
-      <a href="/pages/contact.html">contact</a>
-      Wishlist
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" id="breadcrumb">
-          <li>
-            <a href="/pages/wishlist.html">Home</a>
-          </li>
-        </ol>
-      </nav>
+      <div class="wishlist-container">
+        <div class="wishlist-header">
+          <span>Wishlist <span class="item-count">(4)</span></span>
+          <button>Move All To Bag</button>
+        </div>
+        <div class="wishlist-items">
+          <div class="wishlist-card">1</div>
+          <div class="wishlist-card">2</div>
+          <div class="wishlist-card">3</div>
+          <div class="wishlist-card">4</div>
+          <div class="wishlist-card">5</div>
+        </div>
+      </div>
+      <div class="for-you-container">
+        <div class="for-you-header">
+          <span>Just For You <span class="item-count">(4)</span></span>
+          <button>See All</button>
+        </div>
+        <div class="for-you-items">
+          <div class="for-you-card">1</div>
+          <div class="for-you-card">2</div>
+          <div class="for-you-card">3</div>
+          <div class="for-you-card">4</div>
+        </div>
+      </div>
     </main>
 
     <footer>

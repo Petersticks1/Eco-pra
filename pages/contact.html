@@ -58,9 +58,6 @@
     <hr />
 
     <main class="container">
-      <a href="/pages/cart.html">cart</a>
-
-      Contact
       <!-- Breadcrumb Container -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb" id="breadcrumb">
@@ -70,6 +67,55 @@
           <li><a href="#">Contact</a></li>
         </ol>
       </nav>
+
+      <div class="contact-container">
+        <div class="left-side">
+          <div class="call">
+            <div class="indicator">
+              <i class="fa fa-phone"></i>
+              <span>Call To Us</span>
+            </div>
+            <p class="text">We are available 24/7, 7days a week.</p>
+            <p class="text">Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          </div>
+          <hr />
+          <div class="write">
+            <div class="indicator">
+              <i class="fa fa-message"></i>
+              <span>Write To Us</span>
+            </div>
+            <p class="text">Fill out our form and we will contact you within 24 hours.</p>
+            <p class="text">Email: <a href="mailto:omatsola50@gmail.com">omatsola50@gmail.com</a></p>
+            <p class="text">Email: <a href="mailto:omatsola50@gmail.com">omatsola50@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="right-side">
+          <form
+            class="details-form-inputs"
+            id="form-inputs"
+            action="#"
+            method="post"
+          >
+            <div class="form-input">
+              <label for="name">
+                <input type="text" name="firstName" placeholder="Your Name" id="first-name" required
+              /></label>
+  
+              <label for="email">
+                <input type="email" name="email" placeholder="Your Email" id="email" required
+              /></label>
+              <label for="phone">
+                <input type="tel" name="phoneNumber" placeholder="Your Phone" id="phone" required />
+              </label>
+            </div>
+            <label for="phone">
+              <textarea name="message" placeholder="Your Message" id="message"></textarea>
+            </label>
+
+            <button type="submit" class="save-button">Save Changes</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>

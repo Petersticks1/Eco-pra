@@ -240,8 +240,7 @@ main {
     position: absolute;
     margin-bottom: -5rem;
     margin-left: 3rem;
-    bottom: 50%;
-    /* top:50%; */
+    bottom: 30%;
     transform: translateY(-50%);
     left: 50%;
     text-align: center;
@@ -371,49 +370,6 @@ main {
     text-align: center;
 }
 
-/* .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-} */
-/* .product-slider {
-    width: 100%;
-     max-width: 800px; 
-    overflow: hidden;
-    display: flex; 
-    align-items: center;
-}  */
-
-/* .product-container {
-    display: flex;
-    
-    transition: transform 0.3s ease-in-out;
-} */
-
-/* .product-card {
-    flex: 0 0 200px; 
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}  */
-
-/* 
-.product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-    width: 200px;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}  */
-
 .product-card:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -425,12 +381,7 @@ main {
     object-fit: contain;
 }
 
-/* 
-#product-list {
-    display: flex;
-    flex-wrap: wrap;
-    
-}  */
+
 .product-card h2 {
     text-align: center;
     justify-content: center;
@@ -493,6 +444,53 @@ main {
     margin-bottom: 3rem;
     color: #000000;
 }
+
+.browse-category{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.browse-category ul{
+width: 100%;
+display: flex;
+list-style: none;
+justify-content: space-between;
+}
+
+.browse-category ul li{
+    border-radius: 4px;
+    padding: 1.5rem;
+    width:10rem;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for active effect */
+   
+    justify-content: center;
+    justify-items: center;
+    border:1px solid rgb(191, 188, 188);
+}
+
+.browse-category ul li:hover{
+    color: white;
+    background-color: #db4444;
+}
+
+
+
+.browse-category ul li img {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.browse-category ul li img:hover {
+    filter: brightness(0) invert(1); /* Turns the image white */
+}
+
+
+
+
+
+
 /* FOOTER */
 
 footer {
@@ -598,3 +596,6 @@ footer div ul li:last-child img:hover {
     max-width: 1170px;
     margin-inline: auto;
 }
+
+
+

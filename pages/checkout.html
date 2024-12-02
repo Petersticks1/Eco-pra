@@ -12,8 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/account.css" />
-    <title>Account</title>
+    <link rel="stylesheet" href="/styles/checkout.css" />
+    <title>Checkout</title>
   </head>
   <body>
     <header>
@@ -31,7 +31,6 @@
         </div>
       </div>
     </header>
-
     <nav class="container">
       <h3>Exclusive</h3>
       <ul>
@@ -58,101 +57,111 @@
     <hr />
 
     <main class="container">
-      <div class="account-top">
-        <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb">
         <ol class="breadcrumb" id="breadcrumb">
           <li>
             <a href="/pages/wishlist.html">Home</a>
           </li>
-          <li><a href="#">Account</a></li>
+          <li><a href="#">Checkout</a></li>
+         
         </ol>
       </nav>
-      <p>Welcome! <span class="greeting">Md Rimel</span></p></div>
-
-      <div class="account-container">
-        <nav class="account-menu">
-
-          <div class="main-menu">
-            <span>Manage My Account</span>
-            <ul class="sub-menu">
-              <li><a href="#">My Profile</a></li>
-              <li><a href="#">Address Book</a></li>
-              <li><a href="#">My Payment Options</a></li>
-            </ul>
-          </div>
-          <div class="main-menu">
-            <span>My Orders</span>
-            <ul class="sub-menu">
-              <li><a href="#">My Returns</a></li>
-              <li><a href="#">My Cancellations</a></li>
-            </ul>
-          </div>
-
-          <div class="main-menu">
-            <span>My WishList</span>
-          </div>
-          
-         
-        </nav>
-
-        <form
-          class="account-form-inputs"
-          id="form-inputs"
-          action="#"
-          method="post"
-        >
-          <fieldset class="fieldset-one">
-            <legend>Edit Your Profile</legend>
-
+      <h2>Billing Details</h2>
+      <div class="billing-details-container">
+        <div class="details-form">
+          <form
+            class="details-form-inputs"
+            id="form-inputs"
+            action="#"
+            method="post"
+          >
             <label for="first-name"
-              >First Name
-              <input
-                type="text"
-                name="firstName"
-                id="first-name"
-                placeholder="Md"
-            /></label>
-            <label for="last-name"
-              >Last Name
-              <input
-                type="text"
-                name="lastName"
-                id="last-name"
-                placeholder="Rinnel"
+              >First Name<span class="required">*</span>
+              <input type="text" name="firstName" id="first-name" required
             /></label>
 
-            <label for="email"
-              >Email Address
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="rinell@gmail.com"
-            /></label>
-
-            <label for="address"
-              >Address
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="abeokuta nigeria"
-              />
+            <label for="company-name"
+              >Company Name
+              <input type="text" name="companyName" id="company-name" />
             </label>
-          </fieldset>
-          <fieldset>
-            <legend>Password Changes</legend>
-            <input type="password" name="current password" id="current-password" placeholder="Current Password"/>
-            <input type="password" name="new password" id="new-password" placeholder="New Password"/>
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm New Password"/>
-          </fieldset>
+            <label for="address"
+              >Street Address<span class="required">*</span>
+              <input type="text" name="address" id="address" required />
+            </label>
+            <label for="apartment"
+              >Aparment, floor, e.t.c. (optional)
+              <input type="text" name="apartment" id="apartment" />
+            </label>
+            <label for="town/city"
+              >Town/City<span class="required">*</span>
+              <input type="text" name="town/city" id="town/city" required />
+            </label>
+            <label for="phone"
+              >Phone Number<span class="required">*</span>
+              <input type="tel" name="phoneNumber" id="phone" required />
+            </label>
+            <label for="email"
+              >Email Address<span class="required">*</span>
+              <input type="email" name="email" id="email" required
+            /></label>
 
-          <div class="edit-buttons">
-            <button type="submit" class="cancel-button button">Cancel</button>
-            <button type="submit" class="save-button button">Save Changes</button>
+            <label for="saveInfo">
+              <input type="checkbox" name="saveInfo" />
+              Save this information for faster check-out next time
+            </label>
+          </form>
         </div>
+
+        <div class="details-order">
+          <!-- Product Items -->
+
+          <div class="order-items-price">
+            <div class="order">
+              <div class="order-item">
+                <img src="/images/g92-2-500x500 1.svg" alt="Lcd Monitor" />
+                <span>Lcd Monitor</span>
+              </div>
+              <span class="order-price">$650</span>
+            </div>
+            <div class="order">
+              <div class="order-item">
+                <img src="/images/g27cq4-500x500 1.svg" alt="H1 Gamepad" />
+                <span>H1 Gamepad</span>
+              </div>
+              <span class="order-price">$1100</span>
+            </div>
           </div>
-        </form>
+          <!-- Summary Details -->
+          <div class="summary-details">
+            <p>Subtotal: <span id="subtotal">$1750</span></p>
+            <hr />
+
+            <p>Shipping: <span id="shipping">Free</span></p>
+            <hr />
+            <p>Total: <span id="total">$1750</span></p>
+          </div>
+
+          <!-- Payment Options -->
+          <div class="payment-options">
+            <label for="bank">
+              <input type="radio" name="payment" value="bank" />
+              Bank </label
+            ><img src="/images/Frame 834.svg" alt="Payment Options" />
+            <label for="cash">
+              <input type="radio" name="payment" value="cash" checked />
+              Cash on delivery
+            </label>
+          </div>
+
+          <!-- Coupon and Place Order -->
+           
+        <form class="coupon-section">
+          <input type="text" id="coupon" placeholder="Coupon Code">
+          <button onclick="applyCoupon()">Apply Coupon</button>
+      </form>
+      <button class="order-button" onclick="placeOrder()">Place Order</button>
+  </div>
+        </div>
       </div>
     </main>
 
@@ -228,6 +237,6 @@
         </div>
       </div>
     </footer>
-    <script src="/scripts.js/account.js"></script>
+    <script src="/scripts.js/checkout.js"></script>
   </body>
 </html>

@@ -106,7 +106,6 @@ form input[type="email"] {
   outline: none;
   font-size: 16px;
   padding: 20px;
-
 }
 
 input[type="checkbox"] {
@@ -118,7 +117,6 @@ input[type="checkbox"] {
   vertical-align: -35%;
   margin-right: 10px;
   accent-color: var(--accent-clr);
-
 }
 
 /* details-order */

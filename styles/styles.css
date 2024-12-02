@@ -284,10 +284,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .flash-sales h2 {
-    font-family: Inter;
     font-size: 36px;
     font-weight: 600;
     line-height: 48px;
@@ -371,7 +371,6 @@ main {
 }
 
 .product-card:hover {
-    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -464,30 +463,55 @@ justify-content: space-between;
     border-radius: 4px;
     padding: 1.5rem;
     width:10rem;
-    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for active effect */
-   
+    transition: transform 0.3s, opacity 0.3s; 
     justify-content: center;
     justify-items: center;
     border:1px solid rgb(191, 188, 188);
 }
 
-.browse-category ul li:hover{
-    color: white;
+
+  .browse-category ul li.active {
     background-color: #db4444;
-}
+    color:#ffffff;
+  }
 
-
-
-.browse-category ul li img {
-    transition: all 0.3s ease; /* Smooth transition */
-}
-
-.browse-category ul li img:hover {
+  .browse-category ul li.active img {
+    filter: brightness(0) invert(1); /* Make the image white */
+  }
+  
+  .browse-category ul li.active p {
+    color: white; /* Change text to white */
+  }
+  
+  .browse-category ul li img {
+    width: 100px; /* Adjust image size */
+  }
+  
+  .browse-category ul li p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .browse-category ul li img.active{
     filter: brightness(0) invert(1); /* Turns the image white */
+  }
+  
+.section5{
+    margin-top: 70px;
 }
+  .section5 button {
+    color: #fafafa;
+    background-color: #db4444;
+    border: none;
+    padding: 16px 48px 16px 48px;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
 
-
-
+  
 
 
 

@@ -20,6 +20,7 @@ updateActiveDot();
 
 // Update the active dot every 1 second
 setInterval(updateActiveDot, 1000);
+
 //NAVIGATION INDICATOR JS//
 
 
@@ -142,37 +143,6 @@ async function fetchProducts() {
 
 fetchProducts();
 
-
-//Browse by category
-
-const categories = document.querySelectorAll(".browse-category ul li");
-let activeCount = 0; // Start with the first category active
-
-// Function to update the hover-like effect
-function updateHoverEffect() {
-    categories.forEach((category, index) => {
-        if (index === activeCount) {
-            category.classList.add("hover-effect");
-        } else {
-            category.classList.remove("hover-effect");
-        }
-    });
-}
-
-// Function to handle left arrow click
-function slideLeft() {
-    activeCount = (activeCount - 1 + categories.length) % categories.length; // Loop to the last if at the start
-    updateHoverEffect();
-}
-
-// Function to handle right arrow click
-function slideRight() {
-    activeCount = (activeCount + 1) % categories.length; // Loop to the first if at the end
-    updateHoverEffect();
-}
-
-// Initialize the first hover-like effect
-updateHoverEffect();
 
 
 

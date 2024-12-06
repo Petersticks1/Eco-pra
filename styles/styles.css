@@ -357,6 +357,7 @@ main {
 
 .product-container {
     display: flex;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -511,9 +512,101 @@ justify-content: space-between;
     line-height: 24px;
   }
 
+
+
+  .section6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.section6 .product-container {
+    display: flex;
+    justify-content:space-between; /* Space between products */
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Wrap products if needed for smaller screens */
+   
+}
+
+.section6 .product-card {
+    flex: 0 0 23%; 
+   width: 100%;
+   height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.section7{
+    display: flex;
+    justify-content:space-between;
+    gap:27px ;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+    margin-bottom: 4rem;
+    padding:60px ;
+}
+.section7 div h5{
+    color: #4caf50;
+    margin-bottom: 3rem;
+}
+
+.section7 div h1{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 4%;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section7 button{
+    color: #ffffff;
+    background-color: #4caf50;
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.count {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.count div {
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
   
+}
 
-
+.count span {
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin-top: 5px;
+}
 
 /* FOOTER */
 

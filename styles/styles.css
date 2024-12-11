@@ -32,11 +32,13 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 .header-left {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
+
 .header-left a {
     color: #ffffff;
 }
@@ -204,9 +206,11 @@ main {
     gap: 24px;
     margin-bottom: 1rem;
 }
+
 .voucher-notice .apple i {
     font-size: 50px;
 }
+
 .voucher-notice .apple p {
     font-size: 16px;
     line-height: 24px;
@@ -224,6 +228,7 @@ main {
 .voucher .voucher-notice .shop-now a {
     color: var(--white-text-clr);
 }
+
 .shop-now {
     display: flex;
     gap: 10px;
@@ -257,10 +262,12 @@ main {
 .dot.active {
     background-color: #db4444;
 }
+
 .section2 .today {
     display: flex;
     align-items: center;
 }
+
 .section2 .today h3 {
     color: #db4444;
     font-family: Poppins;
@@ -270,6 +277,7 @@ main {
     text-align: left;
     margin-bottom: 1rem;
 }
+
 .section2 .today h3::before {
     background-color: #db4444;
     padding: 0.5rem;
@@ -361,11 +369,21 @@ main {
     transition: transform 0.3s ease-in-out;
 }
 
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 20px;
+    /* Spacing between products */
+    padding: 20px;
+}
+
 .product-card {
-    flex: 0 0 200px; /* Set card width */
+    flex: 0 0 200px;
+    /* Set card width */
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -418,12 +436,14 @@ main {
     color: #4caf50;
     font-weight: 600;
 }
+
 .section3 .btn {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-.section3 .button {
+
+.button {
     color: #fafafa;
     background-color: #db4444;
     width: 234px;
@@ -437,6 +457,10 @@ main {
     line-height: 24px;
 }
 
+.button:hover{
+    background-color: #8f2d2d;
+}
+
 .lines {
     border: 0.5px 0px 0px 0px;
     opacity: 0.3px;
@@ -445,7 +469,7 @@ main {
     color: #000000;
 }
 
-.browse-category{
+.browse-category {
     width: 100%;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -453,54 +477,60 @@ main {
     align-items: center;
 
 }
-.browse-category ul{
-width: 100%;
-display: flex;
-list-style: none;
-justify-content: space-between;
+
+.browse-category ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
 
-.browse-category ul li{
+.browse-category ul li {
     border-radius: 4px;
     padding: 1.5rem;
-    width:10rem;
-    transition: transform 0.3s, opacity 0.3s; 
+    width: 10rem;
+    transition: transform 0.3s, opacity 0.3s;
     justify-content: center;
     justify-items: center;
-    border:1px solid rgb(191, 188, 188);
+    border: 1px solid rgb(191, 188, 188);
 }
 
 
-  .browse-category ul li.active {
+.browse-category ul li.active {
     background-color: #db4444;
-    color:#ffffff;
-  }
+    color: #ffffff;
+}
 
-  .browse-category ul li.active img {
-    filter: brightness(0) invert(1); /* Make the image white */
-  }
-  
-  .browse-category ul li.active p {
-    color: white; /* Change text to white */
-  }
-  
-  .browse-category ul li img {
-    width: 100px; /* Adjust image size */
-  }
-  
-  .browse-category ul li p {
+.browse-category ul li.active img {
+    filter: brightness(0) invert(1);
+    /* Make the image white */
+}
+
+.browse-category ul li.active p {
+    color: white;
+    /* Change text to white */
+}
+
+.browse-category ul li img {
+    width: 100px;
+    /* Adjust image size */
+}
+
+.browse-category ul li p {
     text-align: center;
     margin-top: 10px;
-  }
-  
-  .browse-category ul li img.active{
-    filter: brightness(0) invert(1); /* Turns the image white */
-  }
-  
-.section5{
+}
+
+.browse-category ul li img.active {
+    filter: brightness(0) invert(1);
+    /* Turns the image white */
+}
+
+.section5 {
     margin-top: 70px;
 }
-  .section5 button {
+
+.section5 button {
     color: #fafafa;
     background-color: #db4444;
     border: none;
@@ -510,11 +540,11 @@ justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-  }
+}
 
 
 
-  .section6 {
+.section6 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,17 +553,19 @@ justify-content: space-between;
 
 .section6 .product-container {
     display: flex;
-    justify-content:space-between; /* Space between products */
+    justify-content: space-between;
+    /* Space between products */
     align-items: center;
     width: 100%;
-    flex-wrap: wrap; /* Wrap products if needed for smaller screens */
-   
+    flex-wrap: wrap;
+    /* Wrap products if needed for smaller screens */
+
 }
 
 .section6 .product-card {
-    flex: 0 0 23%; 
-   width: 100%;
-   height:400px;
+    flex: 0 0 23%;
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -547,46 +579,55 @@ justify-content: space-between;
 }
 
 
-.section7{
+.section7 {
     display: flex;
-    justify-content:space-between;
-    gap:27px ;
+    justify-content: space-between;
+    /* gap: 27px; */
     align-items: center;
     width: 100%;
-    background-color: #000000;
+    background-color: #000;
     margin-bottom: 4rem;
-    padding:60px ;
-}
-.section7 div h5{
-    color: #4caf50;
-    margin-bottom: 3rem;
+    padding: 50px;
 }
 
-.section7 div h1{
+.section7 div h5 {
+    font-size: 14px;
+    color: #4caf50;
+    margin-bottom: 2rem;
+}
+
+.section7 div h1 {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 60px;
     letter-spacing: 4%;
     font-weight: 600;
     margin-bottom: 1rem;
+    /* width: 443px;
+    height: 120px; */
 }
 
-.section7 button{
+.section7 button {
     color: #ffffff;
     background-color: #4caf50;
     text-align: center;
     padding: 15px;
-    width: 50%;
+    width: 40%;
     border: none;
     border-radius: 5px;
+}
+
+.section7 button:hover {
+    background-color: #24d82a;
 }
 
 
 .count {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 16px;
+
 }
 
 .count div {
@@ -594,19 +635,92 @@ justify-content: space-between;
     color: #333;
     background-color: #fff;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-  
+    justify-items: center;
+    width: 62px;
+    padding: 12px;
+
+}
+
+.count div p {
+    font-size: 12px;
 }
 
 .count span {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 14px;
     display: block;
     margin-top: 5px;
 }
+
+
+/* .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 600px; 
+    height: 600px; 
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.3) 30%,
+      rgba(0, 0, 0, 0.8) 100%
+    ); 
+    border-radius: 50%; 
+    overflow: hidden; 
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 50%;
+  } */
+
+.section8{
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.section8 .btn {
+
+    text-align: center;
+}
+
+
+.Play-station{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 3rem;
+margin-bottom: 10rem;
+}
+  
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 3px;
+    margin-bottom: 8rem;
+    
+}
+
+.delivery div{
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+}
+
+.delivery div h3{
+    padding: 4px;
+}
+
+.delivery div p{
+    padding: 6px;
+    font-size: 14px;
+}
+  
+
 
 /* FOOTER */
 
@@ -687,10 +801,12 @@ footer li div {
     justify-content: flex-start;
     align-items: center;
 }
+
 footer div .download {
     margin-top: 2.8rem;
     text-align: justify;
 }
+
 footer div .download .app {
     display: flex;
     flex-direction: column;
@@ -713,6 +829,3 @@ footer div ul li:last-child img:hover {
     max-width: 1170px;
     margin-inline: auto;
 }
-
-
-

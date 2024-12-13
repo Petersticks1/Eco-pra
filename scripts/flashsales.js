@@ -20,48 +20,10 @@ updateActiveDot();
 
 // Update the active dot every 1 second
 setInterval(updateActiveDot, 1000);
+
 //NAVIGATION INDICATOR JS//
 
 
-
-//COUNTDOWN JS//
-// Set the date for the countdown (3 days from now)
-const countdownDate = new Date().getTime() + 4 * 24 * 60 * 60 * 1000;
-
-// Function to format numbers with leading zeros
-function formatNumber(number) {
-    return number < 10 ? '0' + number : number;
-}
-
-// Update the countdown every 1 second
-const countdownInterval = setInterval(() => {
-    // Get the current time
-    const now = new Date().getTime();
-    
-    // Calculate the time left
-    const timeLeft = countdownDate - now;
-    
-    // Calculate days, hours, minutes, and seconds
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-    // Display the result with leading zeros
-    document.getElementById("days").innerText = formatNumber(days);
-    document.getElementById("hours").innerText = formatNumber(hours);
-    document.getElementById("minutes").innerText = formatNumber(minutes);
-    document.getElementById("seconds").innerText = formatNumber(seconds);
-    
-    // If the countdown is over, clear the interval and show a message
-    if (timeLeft < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "<p>Countdown Complete!</p>";
-    }
-}, 1000);
-
-
-//COUNTDOWN JS//
 
 
 // FLASH SALES PRODUCTS JS//
@@ -142,37 +104,6 @@ async function fetchProducts() {
 
 fetchProducts();
 
-
-//Browse by category
-
-const categories = document.querySelectorAll(".browse-category ul li");
-let activeCount = 0; // Start with the first category active
-
-// Function to update the hover-like effect
-function updateHoverEffect() {
-    categories.forEach((category, index) => {
-        if (index === activeCount) {
-            category.classList.add("hover-effect");
-        } else {
-            category.classList.remove("hover-effect");
-        }
-    });
-}
-
-// Function to handle left arrow click
-function slideLeft() {
-    activeCount = (activeCount - 1 + categories.length) % categories.length; // Loop to the last if at the start
-    updateHoverEffect();
-}
-
-// Function to handle right arrow click
-function slideRight() {
-    activeCount = (activeCount + 1) % categories.length; // Loop to the first if at the end
-    updateHoverEffect();
-}
-
-// Initialize the first hover-like effect
-updateHoverEffect();
 
 
 

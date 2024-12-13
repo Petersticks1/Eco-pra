@@ -60,6 +60,14 @@ nav {
     font-size: 20px;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+nav a h3{
+    color: #000000;
+}
+
 nav ul {
     list-style: none;
     display: flex;

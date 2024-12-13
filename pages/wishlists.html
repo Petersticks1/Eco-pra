@@ -11,9 +11,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="/styles/wishlists.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/account.css" />
-    <title>Account</title>
+    <title>Wishlist</title>
   </head>
   <body>
     <header>
@@ -58,104 +58,25 @@
     <hr />
 
     <main class="container">
-      <div class="account-top">
-        <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" id="breadcrumb">
-          <li>
-            <a href="/pages/wishlist.html">Home</a>
-          </li>
-          <li><a href="#">Account</a></li>
-        </ol>
-      </nav>
-      <p>Welcome! <span class="greeting">Md Rimel</span></p></div>
-
-      <div class="account-container">
-        <nav class="account-menu">
-
-          <div class="main-menu">
-            <span>Manage My Account</span>
-            <ul class="sub-menu">
-              <li><a href="#">My Profile</a></li>
-              <li><a href="#">Address Book</a></li>
-              <li><a href="#">My Payment Options</a></li>
-            </ul>
-          </div>
-          <div class="main-menu">
-            <span>My Orders</span>
-            <ul class="sub-menu">
-              <li><a href="#">My Returns</a></li>
-              <li><a href="#">My Cancellations</a></li>
-            </ul>
-          </div>
-
-          <div class="main-menu">
-            <span>My WishList</span>
-          </div>
-          
-         
-        </nav>
-
-        <form
-          class="account-form-inputs"
-          id="form-inputs"
-          action="#"
-          method="post"
-        >
-          <fieldset class="fieldset-one">
-            <legend>Edit Your Profile</legend>
-
-            <label for="first-name"
-              >First Name
-              <input
-                type="text"
-                name="firstName"
-                id="first-name"
-                placeholder="Md"
-            /></label>
-            <label for="last-name"
-              >Last Name
-              <input
-                type="text"
-                name="lastName"
-                id="last-name"
-                placeholder="Rinnel"
-            /></label>
-
-            <label for="email"
-              >Email Address
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="rinell@gmail.com"
-            /></label>
-
-            <label for="address"
-              >Address
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="abeokuta nigeria"
-              />
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Password Changes</legend>
-            <input type="password" name="current password" id="current-password" placeholder="Current Password"/>
-            <input type="password" name="new password" id="new-password" placeholder="New Password"/>
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm New Password"/>
-          </fieldset>
-
-          <div class="edit-buttons">
-            <button type="submit" class="cancel-button button">Cancel</button>
-            <button type="submit" class="save-button button">Save Changes</button>
+      <div class="wishlist-container">
+        <div class="wishlist-header">
+          <span>Wishlist <span class="item-count">(4)</span></span>
+          <button>Move All To Bag</button>
         </div>
-          </div>
-        </form>
+        <div class="wishlist-items">
+          <div class="wishlist-card"></div>
+        </div>
+      </div>
+      <div class="for-you-container">
+        <div class="for-you-header">
+          <span>Just For You</span>
+          <button>See All</button>
+        </div>
+        <div class="for-you-items">
+          <div class="for-you-card"></div>
+        </div>
       </div>
     </main>
-
     <footer>
       <div class="footer-container container">
         <div>
@@ -228,6 +149,6 @@
         </div>
       </div>
     </footer>
-    <script src="/scripts.js/account.js"></script>
+    <script src="/acccw.js/wishlists.js"></script>
   </body>
 </html>

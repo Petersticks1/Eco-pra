@@ -80,6 +80,7 @@ body {
 
 .account-menu {
   align-items: flex-start;
+  padding: 0;
 }
 .account-menu,
 .main-menu,
@@ -91,6 +92,7 @@ body {
 
 .main-menu {
   gap: 8px;
+
 }
 
 .main-menu span {
@@ -98,12 +100,13 @@ body {
   line-height: 24px;
   font-weight: 500;
   color: hsla(0, 0%, 0%, 1);
-  margin-block: 10px;
 }
 
 .sub-menu {
   gap: 8px;
+  align-items: flex-start;
   margin-left: 2rem;
+  margin-bottom: 8px;
 }
 
 .sub-menu li a {
@@ -128,8 +131,10 @@ body {
   line-height: 24px;
   color: var(--text-clr);
   padding-top: 1rem;
-  padding-block: 5rem;
+  padding-block: 2rem;
   padding-inline: 3rem;
+  margin-bottom: 6rem;
+  box-shadow: 5px 5px 10px 5px hsla(0, 0%, 0%, 0.05);
 }
 
 fieldset {

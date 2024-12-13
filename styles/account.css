@@ -1,0 +1,203 @@
+:root {
+    /*     b-g
+   */
+    --bg-primary: hsla(0, 0%, 100%, 1);
+    --bg-secondary: hsla(0, 0%, 96%, 1);
+    --accent-clr: hsla(0, 68%, 56%, 1);
+  
+    /*   text
+   */
+  
+    --text-clr: hsla(0, 0%, 0%, 1);
+    --text-neutral: hsla(0, 0%, 98%, 1);
+  }
+  
+  /* RESET
+   */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* BODY
+   */
+  
+  .account-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 3rem;
+  }
+  .account-top nav {
+    padding: 0;
+  }
+  .account-top span {
+    color: var(--accent-clr);
+  }
+  
+  .breadcrumb {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .breadcrumb li {
+    margin-right: 8px;
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .breadcrumb li::after {
+    content: " / ";
+    margin-left: 8px;
+    color: #888;
+  }
+  
+  .breadcrumb li:last-child::after {
+    content: "";
+  }
+  
+  .breadcrumb li:last-child a {
+    color: #888;
+    pointer-events: none;
+  }
+  
+  /* account container */
+  .account-container {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .account-menu {
+    align-items: flex-start;
+    padding: 0;
+  }
+  .account-menu,
+  .main-menu,
+  .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  
+  .main-menu {
+    gap: 8px;
+  
+  }
+  
+  .main-menu span {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 1);
+  }
+  
+  .sub-menu {
+    gap: 8px;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .sub-menu li a {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.551);
+  }
+  .sub-menu li a:hover {
+    color: hsla(0, 68%, 56%, 1);
+    text-decoration: none;
+  }
+  
+  /* account-form-inputs
+   */
+  
+  .account-form-inputs {
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-clr);
+    padding-top: 1rem;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    margin-bottom: 6rem;
+    box-shadow: 5px 5px 10px 5px hsla(0, 0%, 0%, 0.05);
+  }
+  
+  fieldset {
+    border: none;
+  }
+  .fieldset-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .fieldset-one legend {
+    color: var(--accent-clr);
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .fieldset-one input {
+    margin-top: 10px;
+  }
+  legend {
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  input[type="text"],
+  form input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  
+    display: block;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .button {
+    padding: 16px 48px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .cancel-button {
+    color: var(--text-clr);
+    border: none;
+    background: transparent;
+  }
+  .save-button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+  }
+  
